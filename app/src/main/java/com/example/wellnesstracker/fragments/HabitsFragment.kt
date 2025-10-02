@@ -18,9 +18,6 @@ import com.example.wellnesstracker.widgets.HabitWidgetProvider
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.util.*
 
-/**
- * Fragment for managing daily wellness habits
- */
 class HabitsFragment : Fragment() {
 
     private lateinit var dataManager: DataManager

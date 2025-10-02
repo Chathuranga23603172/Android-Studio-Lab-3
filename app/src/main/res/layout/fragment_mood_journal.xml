@@ -35,7 +35,7 @@
                 android:layout_weight="1"
                 android:text="Show Mood Trend"
                 android:layout_marginEnd="4dp"
-            style="@style/Widget.Material3.Button.OutlinedButton" />
+                style="@style/Widget.Material3.Button.OutlinedButton" />
 
             <Button
                 android:id="@+id/btnShareMood"

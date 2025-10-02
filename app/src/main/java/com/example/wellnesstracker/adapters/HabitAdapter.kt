@@ -10,9 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.wellnesstracker.R
 import com.example.wellnesstracker.models.Habit
 
-/**
- * RecyclerView Adapter for displaying habits
- */
 class HabitAdapter(
     private var habits: MutableList<Habit>,
     private val onIncrement: (Habit) -> Unit,
@@ -39,6 +36,7 @@ class HabitAdapter(
 
     override fun onBindViewHolder(holder: HabitViewHolder, position: Int) {
         val habit = habits[position]
+
         holder.habitName.text = habit.name
         holder.habitProgress.text = "${habit.currentCount} / ${habit.targetCount}"
         holder.progressBar.max = habit.targetCount

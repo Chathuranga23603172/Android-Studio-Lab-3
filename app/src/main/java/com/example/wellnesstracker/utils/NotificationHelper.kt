@@ -12,9 +12,6 @@ import com.example.wellnesstracker.MainActivity
 import com.example.wellnesstracker.R
 import com.example.wellnesstracker.receivers.HydrationReceiver
 
-/**
- * Helper class for managing notifications and alarms
- */
 class NotificationHelper(private val context: Context) {
 
     private val notificationManager =

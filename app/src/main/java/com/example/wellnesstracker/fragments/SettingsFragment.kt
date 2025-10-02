@@ -18,9 +18,6 @@ import com.example.wellnesstracker.R
 import com.example.wellnesstracker.utils.DataManager
 import com.example.wellnesstracker.utils.NotificationHelper
 
-/**
- * Fragment for app settings
- */
 class SettingsFragment : Fragment() {
 
     private lateinit var dataManager: DataManager

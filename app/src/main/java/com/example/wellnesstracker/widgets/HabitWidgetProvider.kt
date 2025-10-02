@@ -7,9 +7,6 @@ import android.widget.RemoteViews
 import com.example.wellnesstracker.R
 import com.example.wellnesstracker.utils.DataManager
 
-/**
- * Home screen widget showing today's habit completion percentage
- */
 class HabitWidgetProvider : AppWidgetProvider() {
 
     override fun onUpdate(

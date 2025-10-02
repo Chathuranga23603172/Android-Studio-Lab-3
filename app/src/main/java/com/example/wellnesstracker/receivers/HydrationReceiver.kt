@@ -6,9 +6,6 @@ import android.content.Intent
 import com.example.wellnesstracker.utils.DataManager
 import com.example.wellnesstracker.utils.NotificationHelper
 
-/**
- * BroadcastReceiver to handle hydration reminder alarms
- */
 class HydrationReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {

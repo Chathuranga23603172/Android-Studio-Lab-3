@@ -10,9 +10,6 @@ import com.example.wellnesstracker.R
 import com.example.wellnesstracker.models.MoodEntry
 import com.example.wellnesstracker.utils.DataManager
 
-/**
- * RecyclerView Adapter for displaying mood entries
- */
 class MoodAdapter(
     private var moodEntries: MutableList<MoodEntry>,
     private val dataManager: DataManager,

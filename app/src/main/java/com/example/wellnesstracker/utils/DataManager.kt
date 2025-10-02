@@ -9,9 +9,6 @@ import com.google.gson.reflect.TypeToken
 import java.text.SimpleDateFormat
 import java.util.*
 
-/**
- * Manages all data persistence using SharedPreferences
- */
 class DataManager(context: Context) {
 
     private val prefs: SharedPreferences =
@@ -25,7 +22,6 @@ class DataManager(context: Context) {
         private const val KEY_HYDRATION_ENABLED = "hydration_enabled"
     }
 
-    // Habit Management
     fun saveHabits(habits: List<Habit>) {
         val json = gson.toJson(habits)
         prefs.edit().putString(KEY_HABITS, json).apply()
@@ -77,7 +73,6 @@ class DataManager(context: Context) {
         return totalPercentage / habits.size
     }
 
-    // Mood Management
     fun saveMoodEntries(entries: List<MoodEntry>) {
         val json = gson.toJson(entries)
         prefs.edit().putString(KEY_MOOD_ENTRIES, json).apply()
@@ -111,7 +106,6 @@ class DataManager(context: Context) {
             .sortedBy { it.timestamp }
     }
 
-    // Hydration Settings
     fun saveHydrationInterval(minutes: Int) {
         prefs.edit().putInt(KEY_HYDRATION_INTERVAL, minutes).apply()
     }
@@ -128,7 +122,6 @@ class DataManager(context: Context) {
         return prefs.getBoolean(KEY_HYDRATION_ENABLED, true)
     }
 
-    // Helper Methods
     fun getCurrentDate(): String {
         val sdf = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
         return sdf.format(Date())

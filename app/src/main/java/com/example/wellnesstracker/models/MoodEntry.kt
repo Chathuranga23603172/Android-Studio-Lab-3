@@ -2,9 +2,6 @@ package com.example.wellnesstracker.models
 
 import java.io.Serializable
 
-/**
- * Data class representing a mood journal entry
- */
 data class MoodEntry(
     val id: String,
     val emoji: String,

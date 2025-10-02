@@ -2,9 +2,6 @@ package com.example.wellnesstracker.models
 
 import java.io.Serializable
 
-/**
- * Data class representing a wellness habit
- */
 data class Habit(
     val id: String,
     var name: String,

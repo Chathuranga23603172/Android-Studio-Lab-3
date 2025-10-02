@@ -27,9 +27,6 @@ import com.github.mikephil.charting.formatter.ValueFormatter
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.util.*
 
-/**
- * Fragment for mood journaling with emoji selector
- */
 class MoodJournalFragment : Fragment() {
 
     private lateinit var dataManager: DataManager

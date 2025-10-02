@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- White Circle Background -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,10 A50,50 0 1,1 60,110 A50,50 0 1,1 60,10 Z"/>
+
+    <!-- Purple Heart (Main Symbol) -->
+    <path
+        android:fillColor="#6200EE"
+        android:pathData="M60,80 L48,68 Q40,60 40,52 Q40,40 48,40 Q54,40 60,47 Q66,40 72,40 Q80,40 80,52 Q80,60 72,68 Z"/>
+
+    <!-- Light Purple Plus Sign -->
+    <path
+        android:fillColor="#BB86FC"
+        android:pathData="M56,45 L56,52 L49,52 L49,58 L56,58 L56,65 L62,65 L62,58 L69,58 L69,52 L62,52 L62,45 Z"/>
+</vector>
