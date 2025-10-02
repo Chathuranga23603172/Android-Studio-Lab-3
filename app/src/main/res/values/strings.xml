@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Wellness Tracker</string>
+    <string name="widget_description">Shows today\'s habit completion progress</string>
+</resources>

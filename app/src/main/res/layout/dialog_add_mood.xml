@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Your Mood"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnEmojiVeryHappy"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="😄"
+            android:textSize="24sp"
+            android:layout_margin="4dp"
+            style="@style/Widget.Material3.Button.OutlinedButton" />
+
+        <Button
+            android:id="@+id/btnEmojiHappy"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="🙂"
+            android:textSize="24sp"
+            android:layout_margin="4dp"
+            style="@style/Widget.Material3.Button.OutlinedButton" />
+
+        <Button
+            android:id="@+id/btnEmojiNeutral"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="😐"
+            android:textSize="24sp"
+            android:layout_margin="4dp"
+            style="@style/Widget.Material3.Button.OutlinedButton" />
+
+        <Button
+            android:id="@+id/btnEmojiSad"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="😔"
+            android:textSize="24sp"
+            android:layout_margin="4dp"
+            style="@style/Widget.Material3.Button.OutlinedButton" />
+
+        <Button
+            android:id="@+id/btnEmojiVerySad"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="😢"
+            android:textSize="24sp"
+            android:layout_margin="4dp"
+            style="@style/Widget.Material3.Button.OutlinedButton" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSelectedEmoji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected: None"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a Note (Optional)"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etMoodNote"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="What's on your mind?"
+        android:inputType="textMultiLine"
+        android:gravity="top|start"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background" />
+
+</LinearLayout>
